@@ -7,9 +7,8 @@ let g:mapleader=" "
 syntax enable                           " Enables syntax highlighingset hidden
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
-set encoding=utf-8 			" The encoding dispayed
+set encoding=utf-8 			                " The encoding dispayed
 set pumheight=10                        " Makes popup menu smaller
-
 set fileencoding=utf-8                  " The encoding written to file
 set ruler                                   " Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
@@ -18,7 +17,7 @@ set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
-"set conceallevel=0                      " So that I can see `` in markdown files
+set conceallevel=0                      " So that I can see `` in markdown files
 set tabstop=2                           " Insert 2 spaces for a tab
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
@@ -27,6 +26,7 @@ set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 "set number                              " Line numbers
+set rnu                                 "set relative line number
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
