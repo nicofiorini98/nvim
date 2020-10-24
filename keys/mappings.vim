@@ -13,9 +13,9 @@ nnoremap <M-l>    :vertical resize +2<CR>
 "nnoremap <c-u> viwU<Esc>
 
 " TAB in general mode will move to text buffer
-"nnoremap <TAB> :bnext<CR>
+nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
-"nnoremap <S-TAB> :bprevious<CR>
+nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
@@ -27,14 +27,18 @@ nnoremap <C-c> <Esc>
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Better tabbing
-"vnoremap < <gv
-"vnoremap > >gv
+vnoremap < <gv
+vnoremap > >gv
 
 " Better window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Better tab navigation
+nnoremap <Leader>l :tabn<CR>
+nnoremap <Leader>h :tabp<CR>
 
 nnoremap <Leader>o o<Esc>^Da 
 nnoremap <Leader>O O<Esc>^Da
