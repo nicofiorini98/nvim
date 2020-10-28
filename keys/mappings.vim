@@ -18,8 +18,11 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate way to save
-nnoremap <C-s> :w<CR>
-" Alternate way to quit
+nnoremap <Leader>a :q!<CR>
+nnoremap <Leader>q :wqa<CR>
+"nnoremap <C-s> :w<CR>
+"nnoremap <C-S-s> :wqa<CR>
+"Alternate way to quit
 "nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
@@ -36,10 +39,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Better tab navigation
+" Better tab navigation, I did it personally
 nnoremap <Leader>l :tabn<CR>
 nnoremap <Leader>h :tabp<CR>
 
 nnoremap <Leader>o o<Esc>^Da 
 nnoremap <Leader>O O<Esc>^Da
 
+nnoremap <Leader>t :CocCommand explorer<Cr>

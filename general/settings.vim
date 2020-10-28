@@ -1,10 +1,17 @@
 "set leader key
 let g:mapleader=" "
+
+"vim wiki configuration
+"let g:vimwiki_list = [{'path': '~/vimwiki/',
+"                      \ 'syntax': 'wiki', 'ext': '.wiki','index':'1'},{'path': '~/wikimd/',
+"                      \ 'syntax': 'markdown', 'ext': '.md','index':'2'}]
+
 "map escape key
-:imap jk <Esc>
-
-
+:inoremap jk <Esc>
+:inoremap JK <Esc>
+:inoremap kj <Esc>dbxa
 syntax enable                           " Enables syntax highlighingset hidden
+set colorcolumn=80                      " Enable a column in 80-th position
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8 			                " The encoding dispayed
@@ -39,10 +46,10 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
 
 
 "You can't stop me
