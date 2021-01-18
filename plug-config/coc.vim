@@ -164,7 +164,7 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | end
 
 
 
-
+" Explorer
 let g:coc_explorer_global_presets = {
 \   '.vim': {
 \     'root-uri': '~/.vim',
@@ -179,6 +179,7 @@ let g:coc_explorer_global_presets = {
 \   },
 \   'floatingTop': {
 \     'position': 'floating',
+\     'floating-position': 'center-top',
 \     'open-action-strategy': 'sourceWindow',
 \   },
 \   'floatingLeftside': {
@@ -198,13 +199,6 @@ let g:coc_explorer_global_presets = {
 \   }
 \ }
 
-" Use preset argument to open it
-"nmap <space>ed :CocCommand explorer --preset .vim<CR>
-"nmap <space>ef :CocCommand explorer --preset floating<CR>
-
-" List all presets
-"nmap <space>el :CocList explPresets
-
-
-
-
+nmap <space>e :CocCommand explorer<CR>
+nmap <space>f :CocCommand explorer --preset floating<CR>
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif

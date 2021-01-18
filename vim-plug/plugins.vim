@@ -20,23 +20,28 @@ call plug#begin("~/.config/nvim/autoload/plugged")
     Plug 'jiangmiao/auto-pairs'
     "themes
     Plug 'dracula/vim'
-   " Plug 'joshdick/onedark.vim' 
+    Plug 'joshdick/onedark.vim' 
     Plug 'vimwiki/vimwiki' 
    
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-    "
+    "airline
     Plug 'vim-airline/vim-airline'
-
     Plug 'vim-airline/vim-airline-themes'
 
-call plug#end()
+
+    "git integration
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
+
+    call plug#end()
 "Config Section
  
  
 syntax enable
-colorscheme dracula
+"colorscheme dracula
  
  
 let g:vimwiki_list = [{'path': '~/vimwiki/'},{'path':'~/diario'}]

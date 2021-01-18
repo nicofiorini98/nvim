@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/nico/.config/nvim/vim-plug'
+let g:netrw_dirhist_4='/home/nico/.config/nvim/keys'
+let g:netrw_dirhist_3='/home/nico/Desktop/hom7'
+let g:netrw_dirhist_2='/home/nico/.config/nvim/themes/onedark.vim'
 let g:netrw_dirhist_1='/home/nico/.config/nvim/plug-config'
