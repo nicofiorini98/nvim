@@ -7,6 +7,8 @@ This is my configuration of nvim, is copied from Chris at machine, don't take is
 
 #Git integration on neovim
 
+https://www.chrisatmachine.com/Neovim/12-git-integration/
+
 ##Signify
 Ho installato il plug in signify che mi consente di mostrare le icone 
 di linee aggiunte, modificate o rimosse. 
@@ -52,3 +54,11 @@ GRemove
 
 GBrowse
 
+##GV 
+this open the commit brouser 
+
+:GV!         # will only list commits that affected the current file
+:GV?         # fills the location list with the revisions of 
+                the current file
+:GV          # or :GV? can be used in visual mode to track the 
+              changes in the selected lines
