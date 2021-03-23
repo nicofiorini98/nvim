@@ -1,5 +1,6 @@
- CONFIG*
-#What is this?
+CONFIG*
+#What is this? 
+
 This is my configuration of nvim, is copied from Chris at machine, don't take ispiration from me.
 
 * To make it work, install vim plug, then in command mode, execute >>:PlugInstall
@@ -8,6 +9,18 @@ This is my configuration of nvim, is copied from Chris at machine, don't take is
 #Git integration on neovim
 
 https://www.chrisatmachine.com/Neovim/12-git-integration/
+
+
+##Coc
+
+:CocInstall coc-json coc-css coc-clangd coc-html coc-python coc-cmake coc-explorer
+
+##Add icons
+Download the font from the repo below or other font, 
+and put into ~/.local/share/fonts
+
+this is the repo where i get the font, is Hack nerd font
+https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 ##Signify
 Ho installato il plug in signify che mi consente di mostrare le icone 
@@ -55,10 +68,16 @@ GRemove
 GBrowse
 
 ##GV 
-this open the commit brouser 
+this open the commit browser 
 
 :GV!         # will only list commits that affected the current file
 :GV?         # fills the location list with the revisions of 
                 the current file
 :GV          # or :GV? can be used in visual mode to track the 
               changes in the selected lines
+              
+
+              
+              
+              
+

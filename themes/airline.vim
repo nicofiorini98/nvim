@@ -11,7 +11,7 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
 " Switch to your current theme
-let g:airline_theme = 'dracula'
+"let g:airline_theme = 'dracula'
 
 " Always show tabs
 set showtabline=2
@@ -20,4 +20,4 @@ set showtabline=2
 set noshowmode
 
 syntax on
-colorscheme dracula 
+"colorscheme dracula 

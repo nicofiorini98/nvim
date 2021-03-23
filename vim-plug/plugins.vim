@@ -19,7 +19,7 @@ call plug#begin("~/.config/nvim/autoload/plugged")
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     "themes
-    Plug 'dracula/vim'
+    "Plug 'dracula/vim'
     Plug 'joshdick/onedark.vim' 
     Plug 'vimwiki/vimwiki' 
    
@@ -35,6 +35,9 @@ call plug#begin("~/.config/nvim/autoload/plugged")
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
+
+    "md generation
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
     call plug#end()
 "Config Section
