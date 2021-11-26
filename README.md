@@ -1,9 +1,14 @@
 CONFIG*
-# What is this? 
 
 This is my configuration of nvim, is copied from Chris at machine, don't take ispiration from me.
 
-* To make it work, install vim plug, then in command mode, execute >>:PlugInstall
+* To make it work, install vim plug
+
+then in command mode, execute >>:PlugInstall
+
+Some plug-in wants node updated, install from here:
+
+https://github.com/nodesource/distributions/blob/master/README.md
 
 
 # Git integration on neovim
