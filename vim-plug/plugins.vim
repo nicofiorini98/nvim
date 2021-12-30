@@ -8,6 +8,9 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+"let g:vimwiki_list = [{'path': '~/vimwiki/Economia/','path_html': '~/vimwiki/Economia/mywiki_html'
+"                     \,'syntax':'markdown','ext':'.md'},
+    "                  \{'path':'~/vimwiki','path_html':'~/vimwiki/vim_wiki_html'}]
 
 
 call plug#begin("~/.config/nvim/autoload/plugged")  
@@ -36,6 +39,9 @@ call plug#begin("~/.config/nvim/autoload/plugged")
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
 
+    " hugo helper
+    Plug 'robertbasic/vim-hugo-helper' 
+
     "md generation
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
@@ -46,7 +52,28 @@ call plug#begin("~/.config/nvim/autoload/plugged")
 syntax enable
 "colorscheme dracula
  
- 
-let g:vimwiki_list = [{'path': '~/vimwiki/'},{'path':'~/diario'}]
+"let g:vimwiki_list = [{'path': '~/vimwiki/'},{'path':'~/diario'}]
+
+let g:vimwiki_list =
+                        \ [{
+                        \ 'path': '~/wiki/vimwiki',
+                        \ 'index': 'index',
+                        \ 'ext': '.md',
+                        \ 'syntax': 'markdown',
+                        \ 'auto_tags': 1
+                        \ },
+                        \{
+                        \ 'path': '~/wiki/Economia',
+                        \ 'index': 'index',
+                        \ 'ext': '.md',
+                        \ 'syntax': 'markdown',
+                        \ 'auto_tags': 1
+                        \},
+                        \{
+                        \ 'path': '~/wiki/vimwiki2',
+                        \ 'index': 'index',
+                        \ 'ext': '.wiki',
+                        \ 'auto_tags': 1
+                        \}]
 
 

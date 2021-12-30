@@ -1,11 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/nico/my_project/blog'
+let g:netrw_dirhist_2='/home/nico/my_project/blog/content/books'
+let g:netrw_dirhist_1='/home/nico/my_project/blog/content'
+let g:netrw_dirhist_0='/home/nico/my_project/blog'
 let g:netrw_dirhist_9='/home/nico/Università/d/2021'
 let g:netrw_dirhist_8='/home/nico/.config/nvim/plug-config'
 let g:netrw_dirhist_7='/home/nico/.config/nvim/themes'
 let g:netrw_dirhist_6='/home/nico/my_project/data_structure'
 let g:netrw_dirhist_5='/home/nico/.config/nvim/vim-plug'
 let g:netrw_dirhist_4='/home/nico/.config/nvim/keys'
-let g:netrw_dirhist_3='/home/nico/Desktop/hom7'
-let g:netrw_dirhist_2='/home/nico/.config/nvim/themes/onedark.vim'
-let g:netrw_dirhist_1='/home/nico/.config/nvim/plug-config'
